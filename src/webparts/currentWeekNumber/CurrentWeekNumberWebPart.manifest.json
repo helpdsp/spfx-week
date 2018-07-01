@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "32dc3cc0-b6ff-4e6b-bdad-80b51791f7ee",
+  "alias": "CurrentWeekNumberWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "group": { "default": "Helpdesk SharePoint", "es-es":"Helpdesk SharePoint","es-mx":"Helpdesk SharePoint" },
+    "title": { "default": "Week of Year", "es-es":"Semana del Año", "es-mx":"Semana del Año" },
+    "description": { "default": "This webpart retrieves the current week number of the  year","es-es":"Este webpart obtiene el numero de la semana actual del año","es-ex":"Este webpart obtiene el numero de la semana actual del año" },
+    "officeFabricIconFontName": "HintText",
+    "properties": {
+      "description": "Current Week Number"
+    }
+  }]
+}
